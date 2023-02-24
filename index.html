@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        body{
+            margin: 0;
+            display: grid;
+            gap: 60px;
+            justify-items: center;
+            background-color: rgba(128, 128, 128, 0.1);
+            
+        }
+
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+       a{
+        text-decoration: none;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: grey;
+        border-radius: 8px;
+        color: white;
+       
+       }
+
+       a:hover{
+        background-color: white;
+        color: black;
+       }
+
+       nav{
+        text-transform: uppercase;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      
+       }
+
+       img{
+        max-width: 100%;
+        display: block;
+       }
+      
+       .sessao1{
+        border: 2px solid black;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+       }
+
+       .sessao2{
+        width: 70%;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        
+       }
+
+       .sessao3{
+        width: 50%;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        align-content: center;
+        justify-content: end;
+        gap: 20px;
+       
+       
+       }
+
+       
+
+       .sessao4{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 60%;
+        padding: 40px;
+        gap: 20px;
+        
+        
+       
+       }
+
+       .redlips{
+        display: grid;
+        grid-column: 2;
+       }
+
+       .texto2{
+        display: grid;
+        grid-column: 1;
+        text-align: right;
+        
+       
+       }
+
+       p{
+        font-size: 20px;
+       line-height: 1.3;
+       }
+
+       .sessao3{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: end;
+        text-transform: uppercase;
+       }
+
+       .sessao4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+       }
+
+       @media (max-width: 600px) {
+
+
+        .cabecalho{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+           
+        }
+        .sessao1{
+        
+        width: 100%;
+       }
+
+       .sessao2{
+        grid-template-columns: 1fr;
+
+       }
+
+       .sessao3{
+        grid-template-columns: 1fr;
+        width: 80%;
+       }
+
+       .sessao4{
+        grid-template-columns: 1fr;
+        width: 100%;
+        box-sizing: border-box;
+        
+       }
+
+       .sessao4 p {
+        font-size: 14px;
+       }
+       }
+
+       
+
+
+       
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img src="img/tumblr_inline_p2zjhmydCe1u672qh_250.png" alt="">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Galeria</a>
+            <a href="#">Noticias</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    
+        <section class="sessao1">
+            <img src="img/Zoe Kravitz for Byrdie301196941_1760934280919018_7250154020484885155_n.jpg" alt="">
+            <img src="img/Zoe Kravitz for Byrdie301233031_771162990830540_7201483443110279103_n.jpg" alt="">
+            <img src="img/Zoe Kravitz for Byrdie301402129_447614220653484_4074470034656206244_n.jpg" alt="">
+            <img src="img/Zoe Kravitz for Byrdie301573281_170103988880234_4955000946596294059_n.jpg" alt="">
+        </section>
+        
+        <section class="sessao2">
+            <img src="img/Zoë Kravitz photographed by Gus Van Sant for i-D MagazineEwcndGcW8AMmUvu.jpg" alt="">
+            <img src="img/Zoë Kravitz photographed by Gus Van Sant for i-D MagazineEwcndGcXIAA9Ln8.jpg" alt="">
+            <img src="img/Zoë Kravitz photographed by Gus Van Sant for i-D MagazineEwcndGUXAAU3zEs.jpg" alt="">
+            <img src="img/Zoë Kravitz photographed by Gus Van Sant for i-D MagazineEwcndGUXMAkzgyW.jpg" alt="">
+        </section>
+
+        <section class="sessao3">
+            <img src="img/Zoe KravitzredlipsFlctPYFWYAElQXj.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatem cum, vitae nisi culpa excepturi assumenda, voluptatum magnam sapiente perspiciatis hic ipsa porro tempore esse nam placeat? Perferendis, omnis amet?</p>
+        </section>
+
+        <section class="sessao4">
+            <p class="texto2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus repudiandae, asperiores, vitae consequatur voluptas porro sit ipsa sapiente voluptatum illum perferendis fugit velit mollitia a cumque aliquid dignissimos eius sint.</p>
+            <img class="redlips" src="img/Zoe KravitzredlipsFlctPxnXgAAsVd9.jpg" alt="">
+            
+        </section>
+
+
+        <footer>Desenvolvido por @Zeh Mario</footer>
+    
+</body>
+</html>
